@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Amazing Places</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-md-center justify-content-sm-center">
+        <h1>Amazing Places</h1>
+        <br><br><br><br><br><br>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <div id="map" ></div>
+        </div>
+        <div class="col-4">
+          <div class="params">
+            <h3>What are you looking for ? </h3>
+           <form class="form-inline">
+             <div class="form-group mb-2">
+               <label for="choosedType" class="col-md-2 col-form-lab">Type</label>
+               <div class="btn-group btn-group-toggle" id ="choosedType" data-toggle="buttons">
+                 <label class="btn btn-secondary active">
+                   <input type="radio" name="options" id="option1" value="restaurant" autocomplete="off" checked> Restaurant
+                 </label>
+                 <label class="btn btn-secondary">
+                   <input type="radio" name="options" id="option2" value="bar" autocomplete="off"> Bar
+                 </label>
+                 <label class="btn btn-secondary">
+                   <input type="radio" name="options" id="option3" value ="hotel" autocomplete="off"> Hotel
+                 </label>
+              </div>
+             </div>
+              <div class="form-group mb-2">
+                <label for="choosedAddress" class="col-md-3 col-form-label">Address</label>
+                <input type="text" name="Address" value="Paris" id = "choosedAddress" class="form-control">
+              </div>
+              <div class="form-group mb-2">
+                <label for="choosedRadius" class="col-md-3 col-form-label">Radius</label>
+                <input type="text" name="Radius" value="Ex. 1500 m" id = "choosedRadius" class="form-control">
+              </div>
+              <div class="form-group mb-2">
+                <label for="choosedKeyword" class="col-md-3 col-form-label">Keyword</label>
+                <input type="text" name="keyword" value="" id = "choosedKeyword" class="form-control">
+              </div>
+            </form>
+            <div class="row">
+              <div class="col-md-3">
+              </div>
+                <button type="button" class="btn btn-success " id="btn_search">Search !</button>
+                <input type="hidden" id="choosedPos" lat="0" lng="0">
+            </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2O8-GleQFrgFl-EX_FmiKUYAyg8nqL2k&libraries=places&callback=initMap" async defer></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
