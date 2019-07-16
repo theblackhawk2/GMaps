@@ -1,13 +1,13 @@
 // Initialisation of the position variables , the map and the infowindow ( The box containing informations about the place)
 
-var morocco = {lat: 32.568523 , lng: -6.174655};
+var paris = {lat: 48.866667 , lng: 2.333333};
 var map;
 var infoWindow;
 
 // Callback function that initializes the map
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'),{
-    center: morocco,
+    center: paris,
     zoom: 6
   });
 
@@ -26,7 +26,7 @@ function gecodeAddress(geocoder, map, position) {
             if (results[0]) {
               // Insert the resulting text in the address input
               document.getElementById("choosedAddress").value = results[0].formatted_address;
-              // Insert the position in the hidden input for later use
+              // INsert the position in the hidden input for later use
               document.getElementById("choosedPos").value = results[0].geometry.location.lat()+":"+results[0].geometry.location.lng();
             } else {
               window.alert('No results found');
@@ -96,9 +96,10 @@ window.onload = function(){
     // preparing GOOGLE PLACES Request Params
     var request = {
         location: position,
-        radius: parseInt(radius),
-        query: type+" "+keyword
+        radius: radius,
+        query: type+' '+keyword
       };
+    console.log(typeof(radius));
     console.log(map);
     // Calling the PlacesService object , with a textSearch function
     var service = new google.maps.places.PlacesService(map);
@@ -108,8 +109,12 @@ window.onload = function(){
         console.log(results);
         // Iterating over all the resulting places
         for (var i = 0; i < results.length; i++) {
-          // Call the custom funciton createMarker for each one
-          createMarker(results[i]);
+          // Recalculate distance between each result and the choosen position to guarante that its in the circle 
+          if ( google.maps.geometry.spherical.computeDistanceBetween(results[i].geometry.location, position) < request.radius)
+          {
+            // Call the custom funciton createMarker for each one
+            createMarker(results[i]);
+          }
 
         }
       }
