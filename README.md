@@ -34,6 +34,15 @@ The main features of this project are :
 
 ### Technologies Used
 
- - [HTML]()
-  - test
-
+ - [HTML5](https://www.w3.org/TR/html52/)
+ - A markup language used to organize elements in a web page.
+ - [CSS3](https://devdocs.io/css/)
+ - A language to style the webpage layout.
+ - [Bootstrap 4.3.1](https://getbootstrap.com/docs/4.3/)
+ - A frontend library to organize content in a grid system.
+ - [Javascript](https://devdocs.io/javascript/)
+ - A programming languages to make dynamic content
+ - [Jquery 3.1.1](https://jquery.com)
+ - A Javascript library that simplifies DOM Manipulation
+ - [Google Maps API](https://developers.google.com/maps/)
+ - An API from google that gives us all tools needed for geolocation,distance and place search manipulation.
