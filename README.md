@@ -34,6 +34,6 @@ The main features of this project are :
 
 ### Technologies Used
 
-- [HTML]()
-  -test
+ - [HTML]()
+  - test
 
