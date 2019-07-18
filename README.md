@@ -34,8 +34,8 @@ The main features of this project are :
 
 ### Technologies Used
 
- - [HTML5](https://www.w3.org/TR/html52/)
- - A markup language used to organize elements in a web page.
+- [HTML5](https://www.w3.org/TR/html52/)
+  - A markup language used to organize elements in a web page.
  - [CSS3](https://devdocs.io/css/)
  - A language to style the webpage layout.
  - [Bootstrap 4.3.1](https://getbootstrap.com/docs/4.3/)
