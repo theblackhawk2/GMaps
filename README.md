@@ -66,6 +66,11 @@ Attention : Zooming in / out can be done by the mouse scroll and double clicking
 The application is easily deployable on any computer having a recent browser. The development version and deployed version were both done on the master branch because there is only one version of the application and i was the only one developping it.
 
 To run the code clone the project using :
+
 ```
-git clone 
+git clone  http://github.com/alexsoulis/GMaps.git
 ```
+In the folder, open the index.html in the browser and it's done !
+
+
+
