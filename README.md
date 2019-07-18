@@ -27,3 +27,13 @@ The main features of this project are :
 * Feature 6 - Allow users to search for places, with repect to the search constraints defined above, and visualise them as Red markers on the map.
 * Feature 7 - Allow users to view the name of the desired place (once the request has been made) by clicking on the corresponding marker.
 
+#### Features Left to Implement
+
+* A User guide, in sildes format,to show the full use case for the user.
+* Adding feedback and comments section to give the user an idea on the quality of service in the choosen place.
+
+### Technologies Used
+
+- [HTML]()
+  -
+
