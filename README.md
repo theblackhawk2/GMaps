@@ -1,7 +1,7 @@
 # GMaps
 This is my project pitch
 
-### UX
+## UX
 
 The aim of this project is to provide a webpage for users wanting to plan their vacations by giving them the possibility to choose places where they would like to go, and giving them comprehensive results.  
 
@@ -13,9 +13,9 @@ Therefore, through this project we tried to answer the following user stories :
 
  [Section wireframes, mokckups]
  
- ### Features
+ ## Features
 
- #### Existing features
+ ### Existing features
  
 The main features of this project are : 
 
@@ -27,12 +27,12 @@ The main features of this project are :
 * Feature 6 - Allow users to search for places, with repect to the search constraints defined above, and visualise them as Red markers on the map.
 * Feature 7 - Allow users to view the name of the desired place (once the request has been made) by clicking on the corresponding marker.
 
-#### Features Left to Implement
+### Features Left to Implement
 
 * A User guide, in sildes format,to show the full use case for the user.
 * Adding feedback and comments section to give the user an idea on the quality of service in the choosen place.
 
-### Technologies Used
+## Technologies Used
 
 - [HTML5](https://www.w3.org/TR/html52/)
   - A markup language used to organize elements in a web page.
@@ -47,7 +47,7 @@ The main features of this project are :
 - [Google Maps API](https://developers.google.com/maps/)
   - An API from google that gives us all tools needed for geolocation,distance and place search manipulation.
   
-### Testing
+## Testing
 
 I tested my webpage in different locations, and in mozilla / google chrome / opera browsers and there is no actual bug. the 3 user stories are similar in the testing process, through the following example .
 
@@ -61,7 +61,7 @@ I tested my webpage in different locations, and in mozilla / google chrome / ope
 
 Attention : Zooming in / out can be done by the mouse scroll and double clicking on the map.
 
-### Deployment
+## Deployment
 
 The application is easily deployable on any computer having a recent browser. The development version and deployed version were both done on the master branch because there is only one version of the application and i was the only one developping it.
 
